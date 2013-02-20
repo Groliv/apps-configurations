@@ -26,7 +26,7 @@ export M2_HOME="/opt/apache-maven"
 # Path to ANT
 export ANT_HOME="/opt/apache-ant"
 
-# Add to path dev tools
+# Add dev tools to PATH
 export PATH="$PATH:\
 $ANDROID_HOME/tools:\
 $ANDROID_HOME/platform-tools:\
