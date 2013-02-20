@@ -1,0 +1,48 @@
+# Makefile
+
+SRC		=	main.c
+
+CHK_SOURCES	=	$(SRC)
+
+CC              =       gcc
+
+OBJ             =       $(SRC:.c=.o)
+
+NAME            =       #Name
+
+RM              =       rm -rvf
+
+INCLUDE         =       -I.
+
+CFLAGS          =       $(INCLUDE) -W -Wall -pedantic -ansi -Werror
+
+$(NAME)         :       $(OBJ)
+			@printf "!! done\n"
+			@$(CC) -o $(NAME) $(OBJ) $(CFLAGS) -lutil
+
+all             :       $(NAME)
+			@printf "!! $(NAME) is up to date\n"
+
+clean           :
+			@printf "++ clean\n"
+			@$(RM) *\~
+			@$(RM) *\#
+			@$(RM) *.core
+			@$(RM) $(OBJ)
+			@$(RM) typescript
+			@printf "!! done.\n"
+
+fclean          :       clean
+			@$(RM) $(NAME)
+			@$(RM) $(NAME)_*-*
+
+re              :       fclean all clean
+
+.PHONY          :       all clean fclean re check-syntax
+
+.c.o            :
+			@printf "$<\n"
+			@$(CC) $(CFLAGS) -c $< -o $@
+
+check-syntax	:
+			$(CC) -Wall -Wextra -pedantic -fsyntax-only $(CHK_SOURCES)

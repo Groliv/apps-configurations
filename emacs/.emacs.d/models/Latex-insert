@@ -1,0 +1,30 @@
+% Document Class
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[dvips]{graphicx} % Load Graphics
+\usepackage[francais]{babel} % Language Document
+\usepackage[latin1]{inputenc} % Character Encoding
+\usepackage{palatino}
+\usepackage{color} % Load Color
+
+% Document Information
+\author{\textsc{Insert Author}}
+\title{Insert Title}
+
+% Start Document
+\begin{document}
+
+\maketitle % Front page Title
+
+\newpage % Abstract
+\begin{abstract}
+  Insert Abstract.
+\end{abstract}
+
+\newpage % Table of Contents
+\tableofcontents
+
+\newpage % Start Here
+
+\end{document}

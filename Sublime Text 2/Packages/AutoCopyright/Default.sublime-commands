@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Auto Copyright: Insert Copyright",
+        "command": "insert_copyright"
+    },
+    {
+        "caption": "Auto Copyright: Update Copyright",
+        "command": "update_copyright"
+    }
+]

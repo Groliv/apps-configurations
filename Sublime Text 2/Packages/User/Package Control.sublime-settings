@@ -1,0 +1,14 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"ADBView",
+		"Andrew",
+		"AutoCopyright",
+		"Git",
+		"Package Control",
+		"Pretty JSON",
+		"SublimeJava",
+		"SVN"
+	]
+}
