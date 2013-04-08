@@ -5,7 +5,7 @@
 ## Login   <jocelyn@erioxyde.com>
 ##
 ## Started on  Sat Nov  3 20:55:49 2007 Jocelyn GIRARD
-## Last update Wed Feb 20 17:25:10 2013 Jocelyn GIRARD
+## Last update Fri Apr  5 15:06:03 2013 Jocelyn GIRARD
 ##
 
 # Zsh Modules
@@ -281,6 +281,7 @@ alias rm='rm -i'
 
 alias ls="ls -lhFG"
 alias l='ls'
+alias ll='ls'
 alias la='ls -a'
 
 alias pacman='yaourt'
