@@ -71,6 +71,11 @@ class NewAndroidProjectCommand(sublime_plugin.WindowCommand):
         return self.versionsHeaders
 
 
+class AndrewDeprecated(sublime_plugin.WindowCommand):
+    def run(self):
+        sublime.active_window().open_file(sublime.packages_path()+os.sep+'Andrew'+os.sep+'README.md')
+
+
 class CallAdbCommand(sublime_plugin.WindowCommand):
     def run(self):
         settings = sublime.load_settings('Andrew.sublime-settings')

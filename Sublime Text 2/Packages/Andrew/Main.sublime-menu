@@ -1,7 +1,7 @@
 [
 {
 	"id":"andrew",
-	"caption":"Andrew",
+	"caption":"Andrew (deprecated!)",
 	"mnemonic":"A",
 	"children":
 	[
@@ -126,6 +126,12 @@
 					"mnemonic":"W"
 				}
 			]
+		},
+		{
+			"caption":"Why is Andrew Deprecated? (README)", 
+			"id":"andrew_deprecated",
+			"command":"andrew_deprecated",
+			"mnemonic":"D"
 		}
 	]
 }

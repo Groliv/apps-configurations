@@ -2,6 +2,14 @@
 
 Andrew is a lightweight Android Development Project for Sublime Text 2. It combines perfectly with [ADBView](https://github.com/quarnster/ADBView) to get a functional Android development environment.
 
+## Notice: Andrew from Bitbucket is deprecated! ##
+
+Andrew from Bitbucket has been deprecated in favor of its version on Github. If you are using Package Control, **you may not be able to automatically update to the Github version**, as it may count as a new plugin. However, Will Bond (the one maintaining Package Control) needs to accept the change, and it may take a while for the Github version to appear on the Install list.
+
+If you want to have it right now (Windows and ST3 support!), you can download it from https://github.com/Korcholis/Andrew, or you can clone it, moving to the Packages directory and hitting:
+
+    git clone git://github.com/Korcholis/Andrew.git
+
 ## Recent Changes ##
 
 ###0.3###

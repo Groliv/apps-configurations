@@ -281,8 +281,8 @@ alias rm='rm -i'
 
 alias ls="ls -lhFG"
 alias l='ls'
-alias ll='ls'
 alias la='ls -a'
+alias ll='la'
 
 alias pacman='yaourt'
 alias top='htop'
