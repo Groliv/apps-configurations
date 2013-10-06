@@ -5,7 +5,7 @@
 ## Login   <jocelyn@erioxyde.com>
 ##
 ## Started on  Sat Nov  3 20:55:49 2007 Jocelyn GIRARD
-## Last update Fri Apr  5 15:06:03 2013 Jocelyn GIRARD
+## Last update Thu Aug  8 18:54:04 2013 Jocelyn GIRARD
 ##
 
 # Zsh Modules
@@ -295,6 +295,16 @@ alias cd..='cd ..'
 alias df='df -h'
 alias du='du -h'
 alias mkdir='mkdir -vp'
+
+# SnS
+alias ll='ls -al'
+alias l='ls -CF'
+alias psa='ps -eA'
+alias psag='ps -eA | grep ${1}'
+alias h='history'
+alias hg='history | grep ${1}'
+alias frm='find . -name ${1} -exec rm {} \;'
+alias fg='find . -name "${1}" -type f -exec grep ${2} {} \;'
 
 # Binding
 # -----------------------------------------------------------------------------
