@@ -5,7 +5,7 @@
 ## Login   <jocelyn@erioxyde.com>
 ##
 ## Started on  Sat Nov  3 20:55:49 2007 Jocelyn GIRARD
-## Last update Thu Aug  8 18:54:04 2013 Jocelyn GIRARD
+## Last update Tue Dec  9 11:30:01 2014 Jocelyn GIRARD
 ##
 
 # Zsh Modules
@@ -95,6 +95,8 @@ setopt HIST_VERIFY
 
 # Les jobs qui tournent en tache de fond sont nice a '0'
 unsetopt BG_NICE
+
+setopt PRINT_EXIT_VALUE
 
 # GIT
 # -----------------------------------------------------------------------------
@@ -438,7 +440,7 @@ fi
 #PS1="${host_prompt} ${jobs_total}${history_total} ${directory_prompt}${error_total}${post_prompt} "
 PS1="${host_prompt}:${directory_prompt}$(git_prompt_info)${post_prompt} "
 PROMPT=':: %{$fg[magenta]%}%B%n%b%{$reset_color%}[%{$fg[yellow]%}%M%{$reset_color%}] %{$fg[white]%}%C%b%{$reset_color%} $(git_prompt_info)%{$fg[cyan]%}%(!.#.>)%{$reset_color%} '
-RPROMPT='- %* -'
+RPROMPT='- %* - [%?]'
 
 # iTerm Tab and Title Customization
 # -----------------------------------------------------------------------------
